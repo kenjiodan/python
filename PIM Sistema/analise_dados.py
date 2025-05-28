@@ -2,12 +2,12 @@ import openpyxl
 from statistics import mean, median, mode
 import os
 
-NOME_PASTA = "dados_excel"
+
+NOME_PASTA = os.path.join("python", "PIM Sistema")
 NOME_ARQUIVO_EXCEL = os.path.join(NOME_PASTA, "dados_usuarios.xlsx")
 
-# Código de escape ANSI para texto verde
-COR_VERDE = '\033[92m'
-COR_PADRAO = '\033[0m'
+COR_VERDE = '\033[92m' 
+COR_PADRAO = '\033[0m' 
 
 if not os.path.exists(NOME_PASTA):
     os.makedirs(NOME_PASTA)
